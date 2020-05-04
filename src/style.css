@@ -1,5 +1,12 @@
-*{box-sizing: border-box;margin: 0;padding: 0;}
-*::before, *::after{box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 .skin {
   background: #ffe035;
@@ -13,9 +20,15 @@
   left: 50%;
   margin-left: -10px;
   top: 150px;
-  border-radius: 100% 15% 0 15%;
+  border-radius: 80% 15% 0 15%;
   transform: rotate(45deg);
   position: relative;
+  z-index: 3;
+}
+
+
+.nose:hover {
+  
 }
 
 .eye {
@@ -62,7 +75,7 @@
   position: absolute;
   top: 10px;
   left: 50%;
-  margin-left: -53px;
+  margin-left: -50px;
   border: 3px solid #000;
   width: 100px;
   height: 30px;
@@ -73,35 +86,34 @@
 }
 
 .mouth .up .lip.left {
-  transform: translateX(-50px);
   border-radius: 0 0 0 90%;
   border-right-color: transparent;
-  transform: rotate(-25deg) translateX(-58px);
+  transform: rotate(-25deg) translateX(-52px) translateY(1px);
 }
 .mouth .up .lip.right {
-  transform: translateX(50px);
   border-radius: 0 0 90% 0;
   border-left-color: transparent;
-  transform: rotate(25deg) translateX(58px);
+  transform: rotate(25deg) translateX(53px) translateY(1px);
 }
 
 .mouth .down {
   /* border: 1px solid #000; */
-  height: 155px;
-  bottom: 0;
+  height: 158px;
+  bottom: 0px;
   position: absolute;
   width: 100%;
   overflow: hidden;
-  /* background: #683039; */
+  background: #ffe035;
 }
 .mouth .down .lip {
   border: 3px solid #000;
   height: 1000px;
-  width: 100%;
-  bottom: 0;
+  width: 80%;
+  left: 10%;
+  bottom: 0px;
   position: absolute;
   border-radius: 100px/500px;
-  margin-left: -3px;
+
   background: #683039;
   overflow: hidden;
 }
