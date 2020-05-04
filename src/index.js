@@ -8,7 +8,7 @@ const $sound3 = $("#sound3").get(0);
 $sound2.play();
 setInterval(() => {
   $sound3.play();
-}, 5000);
+}, 10000);
 
 $nose.on("mouseover", () => {
   $sound1.play();
@@ -17,6 +17,6 @@ $tongue.on("mouseover", () => {
   $sound2.play();
 });
 
-$ball.on("click", () => {
+$ball.on("mouseover", () => {
   $sound3.play();
 });
