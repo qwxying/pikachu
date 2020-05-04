@@ -5,12 +5,10 @@ const $sound1 = $("#sound1").get(0);
 const $sound2 = $("#sound2").get(0);
 const $sound3 = $("#sound3").get(0);
 
-$sound2.play()
+$sound2.play();
 setInterval(() => {
   $sound3.play();
 }, 5000);
-
-
 
 $nose.on("mouseover", () => {
   $sound1.play();
