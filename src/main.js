@@ -1,22 +1,13 @@
-const $nose = $(".nose");
-const $tongue = $(".tongue");
-const $ball = $(".ball");
+const $skin = $(".skin");
 const $sound1 = $("#sound1").get(0);
 const $sound2 = $("#sound2").get(0);
 const $sound3 = $("#sound3").get(0);
 
-$sound2.play();
 setInterval(() => {
   $sound3.play();
 }, 10000);
 
-$nose.on("mouseover", () => {
-  $sound1.play();
-});
-$tongue.on("mouseover", () => {
+$skin.on("mouseover", () => {
+  console.log("222");
   $sound2.play();
-});
-
-$ball.on("mouseover", () => {
-  $sound3.play();
 });
