@@ -23,7 +23,7 @@
   margin-left: -174px;
   top: 440px;
   transform: scale(1.2);
-  animation: leftMove 2000ms infinite linear;
+  animation: leftMove 3000ms infinite linear;
 }
 @keyframes leftMove {
   0% {
@@ -42,7 +42,7 @@
   margin-left: 68px;
   top: 440px;
   transform: scale(1.2) rotateY(180deg);
-  animation: rightMove 2000ms infinite linear;
+  animation: rightMove 3000ms infinite linear;
 }
 @keyframes rightMove {
   0% {
@@ -71,6 +71,7 @@
     rgba(49, 45, 43, 1) 55%,
     rgba(255, 255, 255, 1) 55%
   );
+  animation: roll 3000ms infinite linear;
   border-radius: 50%;
 }
 @keyframes roll {
@@ -84,9 +85,9 @@
     transform: rotate(180deg);
   }
 }
-.ball:hover {
+/* .ball:hover {
   animation: roll 2000ms 1 linear;
-}
+} */
 .ball::before {
   content: "";
   border-radius: 50%;
