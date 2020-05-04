@@ -5,14 +5,13 @@ const $sound1 = $("#sound1").get(0);
 const $sound2 = $("#sound2").get(0);
 const $sound3 = $("#sound3").get(0);
 
-// $sound2.play();
-setTimeout(() => {}, 1000);
-setTimeout(() => {
-  $sound2.play();
-}, 1000);
-setTimeout(() => {
-  $sound1.play();
-}, 3000);
+$sound2.play()
+setInterval(() => {
+  $sound3.play();
+}, 5000);
+
+
+
 $nose.on("mouseover", () => {
   $sound1.play();
 });
