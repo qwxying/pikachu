@@ -236,12 +236,12 @@
   border: 5px solid #fdbc48;
 
   width: 400px;
-  height: 5000px;
-  bottom: 350px;
+  height: 500px;
+  top: -50px;
   position: absolute;
   left: 50%;
   margin-left: -200px;
-  border-radius: 700px/1000px;
+  border-radius: 500px/500px;
   border-left-color: transparent;
   border-right-color: transparent;
 }
