@@ -10,8 +10,10 @@
 
 .skin {
   background: #ffcb00;
-  min-height: 100vh;
-  position: relative;
+  height: 100vh;
+  /* position: relative; */
+  position: auto;
+  /* position: absolute; */
   min-width: 100vh;
 }
 
