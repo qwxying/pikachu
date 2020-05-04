@@ -231,3 +231,17 @@
 .face.right {
   transform: translateX(150px);
 }
+
+.chin {
+  border: 5px solid #fdbc48;
+
+  width: 400px;
+  height: 5000px;
+  bottom: 350px;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  border-radius: 700px/1000px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
