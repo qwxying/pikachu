@@ -9,11 +9,96 @@
 }
 
 .skin {
-  background: #ffe035;
+  background: #ffcb00;
   min-height: 100vh;
-  /* min-width: 100vh; */
+  position: relative;
+  min-width: 100vh;
 }
 
+.leftHand {
+  position: absolute;
+  left: 50%;
+  margin-left: -174px;
+  top: 440px;
+  transform: scale(1.2);
+  animation: leftMove 2000ms infinite linear;
+}
+@keyframes leftMove {
+  0% {
+    transform: scale(1.2) translateX(0px);
+  }
+  50% {
+    transform: translate(-20px, -10px);
+  }
+  100% {
+    transform: scale(1.2) translateX(0px);
+  }
+}
+.rightHand {
+  position: absolute;
+  left: 50%;
+  margin-left: 68px;
+  top: 440px;
+  transform: scale(1.2) rotateY(180deg);
+  animation: rightMove 2000ms infinite linear;
+}
+@keyframes rightMove {
+  0% {
+    transform: scale(1.2) translateX(0px) rotateY(180deg);
+  }
+  50% {
+    transform: translate(20px, -10px) rotateY(180deg);
+  }
+  100% {
+    transform: scale(1.2) translateX(0px) rotateY(180deg);
+  }
+}
+
+.ball {
+  border: 10px solid #491e2f;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 50%;
+  top: 500px;
+  margin-left: -60px;
+  z-index: 10;
+  background: linear-gradient(
+    rgba(237, 66, 74, 1) 45%,
+    rgba(49, 45, 43, 1) 45%,
+    rgba(49, 45, 43, 1) 55%,
+    rgba(255, 255, 255, 1) 55%
+  );
+  border-radius: 50%;
+}
+@keyframes roll {
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  75% {
+    transform: rotate(180deg);
+  }
+}
+.ball:hover {
+  animation: roll 2000ms 1 linear;
+}
+.ball::before {
+  content: "";
+  border-radius: 50%;
+  border: 10px solid #312d2b;
+  background: #fff;
+  height: 40px;
+  width: 40px;
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+}
 .nose {
   background: #000;
   width: 20px;
@@ -75,9 +160,9 @@
   border: 3px solid #000;
   width: 100px;
   height: 30px;
-  /* border-color: #ffe035; */
+  /* border-color: #ffcb00; */
   z-index: 1;
-  background: #ffe035;
+  background: #ffcb00;
   border-top-color: transparent;
 }
 
@@ -99,7 +184,7 @@
   position: absolute;
   width: 100%;
   overflow: hidden;
-  background: #ffe035;
+  background: #ffcb00;
 }
 .mouth .down .lip {
   border: 3px solid #000;
