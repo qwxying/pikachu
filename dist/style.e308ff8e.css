@@ -1,0 +1,136 @@
+.skin {
+  background: #ffe035;
+  height: 100vh;
+}
+
+.nose {
+  background: #000;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  margin-left: -10px;
+  top: 150px;
+  border-radius: 100% 15% 0 15%;
+  transform: rotate(45deg);
+  position: relative;
+}
+
+.eye {
+  border: 1px solid #000;
+  background: #000;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  top: 90px;
+  margin-left: -40px;
+}
+.eye::before {
+  content: "";
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  left: 30px;
+  top: 2px;
+}
+
+.eye.left {
+  transform: translateX(-120px);
+}
+.eye.right {
+  transform: translateX(120px);
+}
+
+.mouth {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  top: 160px;
+  /* border: 1px solid #000; */
+  /* overflow: hidden; */
+}
+.mouth .up .lip {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -53px;
+  border: 3px solid #000;
+  width: 100px;
+  height: 30px;
+  /* border-color: #ffe035; */
+  z-index: 1;
+  background: #ffe035;
+  border-top-color: transparent;
+}
+
+.mouth .up .lip.left {
+  transform: translateX(-50px);
+  border-radius: 0 0 0 90%;
+  border-right-color: transparent;
+  transform: rotate(-25deg) translateX(-58px);
+}
+.mouth .up .lip.right {
+  transform: translateX(50px);
+  border-radius: 0 0 90% 0;
+  border-left-color: transparent;
+  transform: rotate(25deg) translateX(58px);
+}
+
+.mouth .down {
+  /* border: 1px solid #000; */
+  height: 155px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  /* background: #683039; */
+}
+.mouth .down .lip {
+  border: 3px solid #000;
+  height: 1000px;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  border-radius: 100px/500px;
+  margin-left: -3px;
+  background: #683039;
+  overflow: hidden;
+}
+.mouth .down .lip .tongue {
+  border: 2px solid #000;
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  bottom: -90px;
+  left: 50%;
+  margin-left: -100px;
+  border-radius: 50%;
+  background: #d5617b;
+}
+
+.face {
+  background: #e23d22;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  border: 3px solid #000;
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  margin-left: -53px;
+}
+.face.left {
+  transform: translateX(-200px);
+}
+.face.right {
+  transform: translateX(200px);
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
