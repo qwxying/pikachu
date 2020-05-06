@@ -10,11 +10,9 @@
 
 .skin {
   background: #ffcb00;
-  height: 100vh;
-  /* position: relative; */
+  min-height: 100vh;
   position: auto;
-  /* position: absolute; */
-  min-width: 100vh;
+  min-width: 100vw;
 }
 
 .leftHand {

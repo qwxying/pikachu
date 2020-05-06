@@ -6,8 +6,7 @@ const $sound3 = $("#sound3").get(0);
 setInterval(() => {
   $sound3.play();
 }, 10000);
-
-$skin.on("mouseover", () => {
-  console.log("222");
+$sound3.play();
+$skin.on("mousedown", () => {
   $sound2.play();
 });
